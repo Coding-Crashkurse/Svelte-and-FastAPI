@@ -1,4 +1,4 @@
-<div class="wrapper h-screen">
+<div class="wrapper">
     <div class="max-w-screen-xl mx-auto pt-40">
         <div class="text-center">
             <h3 class="text-blue-500 text-2xl p-2 uppercase font-extrabold">Coding Crashkurse</h3>
@@ -36,6 +36,9 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-height: calc(100vh - 40px);
 }
 
+
 </style>
+

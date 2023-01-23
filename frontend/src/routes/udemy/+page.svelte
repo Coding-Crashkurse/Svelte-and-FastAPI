@@ -1,70 +1,24 @@
 
-    <div class="max-w-screen-xl mx-auto pt-40">
-        <div class="card-wrapper flex">
-            <div class="card w-96 bg-base-100 shadow-xl m-4">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-              <div class="card w-96 bg-base-100 shadow-xl m-4">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-              <div class="card w-96 bg-base-100 shadow-xl m-4">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-        </div>
-        <div class="card-wrapper flex">
-            <div class="card w-96 bg-base-100 shadow-xl m-4">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-              <div class="card w-96 bg-base-100 shadow-xl m-4">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-              <div class="card w-96 bg-base-100 shadow-xl m-4">
-                <figure><img src="https://placeimg.com/400/225/arch" alt="Shoes" /></figure>
-                <div class="card-body">
-                  <h2 class="card-title">Shoes!</h2>
-                  <p>If a dog chews shoes whose shoes does he choose?</p>
-                  <div class="card-actions justify-end">
-                    <button class="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </div>
+<script>
+  import Card from "../../components/Card.svelte";
+</script>
+
+<div class="wrapper bg-blue-200 pb-20 h-screen">
+  <div class="max-w-screen-xl mx-auto pt-40 bg">
+      <h1 class="text-black text-4xl font-extrabold mb-4">Meine Premium Kurse auf Udemy</h1>
+      <div>
+
+      </div>
+
+      <div class="cardwrapper grid grid-cols-2 gap-6">
+          <Card/>
+          <Card/>
+
+      </div>
+</div>
+
+
+</div>
 
 
 

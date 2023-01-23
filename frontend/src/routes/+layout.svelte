@@ -1,8 +1,9 @@
 <script>
 	import '../app.css';
+	let year = new Date().getFullYear();
 </script>
 
-<div class="nav-wrapper bg-base-100 bg-black text-white absolute w-full">
+<div class="nav-wrapper bg-black p-2 text-white absolute w-full">
 	<div class="max-w-screen-xl flex justify-between mx-auto">
 		<div class="flex items-center justify-center">
 			<a class="btn btn-ghost normal-case text-xl">Coding Crashkurse</a>
@@ -38,3 +39,9 @@
 
 
 <slot />
+
+<footer>
+	<div class="footer bg-black h-10 text-white flex items-center">
+		<div class="inline text-center w-full ">Copyright {year} Coding Crashkurse, All rights reserved | <a href="/impressum">Impressum</a> | <a href="/datenschutzerklaerung">Datenschutzerklärung</a></div>
+	</div>
+</footer>

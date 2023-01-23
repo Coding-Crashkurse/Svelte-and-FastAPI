@@ -1,8 +1,48 @@
 
-    <div class="max-w-screen-xl mx-auto pt-40">
-        <h2>Über mich</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo architecto maiores fuga doloribus consequuntur ab, aut sunt neque praesentium! Molestiae officia magnam dicta vero praesentium a sunt! Eos iste nostrum tempora. Voluptas atque at, adipisci culpa minus velit earum vel dicta ab fuga doloremque recusandae nesciunt est totam praesentium facilis illum aut delectus suscipit corporis eveniet nostrum provident autem. Harum doloribus accusantium nihil mollitia, officiis illum quos voluptatibus nostrum exercitationem sint ratione eum fuga omnis cum et porro corporis repellendus! Aut dicta laborum quidem possimus quos ullam inventore provident, aperiam sint nobis et. Quam natus alias hic facilis eius recusandae.</p>
-    </div>
+
+<div class="wrapper bg-blue-200 pb-20 h-screen">
+    <div class="max-w-screen-xl mx-auto pt-40 bg">
+        <h1 class="text-black text-4xl font-extrabold mb-4">Über mich</h1>
+        <div class="flex gap-8">
+            <div class="logoborder-1 shrink-0">
+                <img src="/images/profil.JPG" alt="" class="border-2 border-white rounded-xl w-72">
+            </div>
+            <div class="links p-8 text-white bg-gray-800 rounded-xl self-start">
+                <p class="py-2">Hallo, mein Name ist <span class="text-blue-400">Markus</span>. Ich bin Softwareentwickler im KI Bereich, bin auf Python spezialisiert, bin aber auch gerne im Frontend unterwegs und probiere mich an JavaScript Frameworks.</p>
+                <p class="py-2">2021 habe ich meinen   YouTube Kanal "Coding Crashkurse" gegründet und teile seitdem mein Wissen mit anderen.</p>
+                <p class="py-2">Da ich selbst "self-taught" bin, ist es mir gerade ein Anliegen auch anderen Quereinsteigern zu zeigen, wie man ohne Informatikstudium in die IT kommt.</p>
+            </div>
+        </div>
+        <div class="wrapper py-8">
+            <h1 class="text-black text-4xl font-extrabold my-10">Über dieses Projekt</h1>
+            <div class="project-wrapper flex justify-around text-center">
+                <div class="frontend flex-1">
+                    <h2 class="text-2xl font-bold pb-4">Frontend</h2>
+                    <img src="images/sveltelogo.png" alt="" class="w-36 mx-auto p-2">
+                    <img src="images/tailwind.png" alt="" class="w-44 mx-auto p-2">
+                </div>
+                <div class="backend flex-1">
+                    <h3 class="text-2xl font-bold pb-4">Backend</h3>
+                    <img src="images/fastapi.png" alt="" class="w-100 mx-auto p-2">
+                    <img src="images/postgres.png" alt="" class="w-40 mx-auto p-2">
+                </div>
+                <div class="hosting flex-1">
+                    <h3 class="text-2xl font-bold pb-4">Deployment & Hosting</h3>
+                    <img src="images/docker.png" alt="" class="w-52 mx-auto p-2">
+                    <img src="images/digitalocean.png" alt="" class="w-48 mx-auto p-2">
+                </div>
+            </div>
+            <p class="italic mt-8">Weitere Informationen:</p>
+            <p>Dieses Produkt ist veröffentlicht unter der MIT Lizenz.</p>
+            <div>
+                Code: <a href="https://github.com/Coding-Crashkurse/Svelte-and-PocketBase" target="_blank" rel="noreferrer">Repository</a>
+            </div>
+        </div>
+
+</div>
+
+
+</div>
 
 
 
