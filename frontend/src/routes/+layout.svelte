@@ -4,11 +4,11 @@
 </script>
 
 <div class="nav-wrapper bg-black p-2 text-white absolute w-full">
-	<div class="max-w-screen-xl flex justify-between mx-auto">
+	<div class="max-w-screen-xl flex  justify-between mx-auto flex-col md:flex-row">
 		<div class="flex items-center justify-center">
 			<a class="btn btn-ghost normal-case text-xl">Coding Crashkurse</a>
 		</div>
-		<div class="flex">
+		<div class="flex justify-center">
 			<a href="/" class="group text-white hover:text-sky-600 transition duration-300 p-2 m-2 text-xl">
 				Home
 				<span
@@ -21,8 +21,8 @@
 					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
 				/>
 			</a>
-			<a href="/udemy" class="group text-white hover:text-sky-600 transition duration-300 p-2 m-2 text-xl">
-				Udemy
+			<a href="/premium" class="group text-white hover:text-sky-600 transition duration-300 p-2 m-2 text-xl">
+				Premium
 				<span
 					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
 				/>

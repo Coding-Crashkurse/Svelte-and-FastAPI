@@ -2,15 +2,15 @@
     <div class="max-w-screen-xl mx-auto pt-40">
         <div class="text-center">
             <h3 class="text-blue-500 text-2xl p-2 uppercase font-extrabold">Coding Crashkurse</h3>
-            <h1 class="text-6xl text-white p-4 uppercase font-extrabold leading-normal">Programmierkurse für jedermann</h1>
-            <p class="text-2xl text-white p-4">Praxisorientiert, projektbasiert, leicht zu verstehen</p>
+            <h1 class="text-4xl  md:text-6xl text-white p-4 uppercase font-extrabold leading-normal">Programmierkurse für alle</h1>
+            <p class="text-xl md:text-2xl text-white p-4">Praxisorientiert, projektbasiert, leicht zu verstehen</p>
             <a href="/youtube" class="btn mt-4 bg-blue-400 uppercase px-12">Starte noch heute</a>
         </div>
-        <div class="mt-40 px-4 py-10 rounded-lg bg-blue-400 flex">
+        <div class="mt-40 px-4 py-10 rounded-lg bg-blue-400 flex flex-col m-4 md:flex-row">
             <div class="logo flex-1">
                 <img src="/images/ytaccount.png" alt="">
             </div>
-            <div class="links flex-1 p-4 text-white">
+            <div class="links flex-1 p-4 text-white text-center">
                 <div class="content">
                     <h1 class="text-3xl uppercase font-extrabold pb-4">Coding Crashkurse auf YouTube</h1>
                     <p class="pb-4 text-xl">200+ kostenlose Tutorials und Crashkurse zu vielen unterschiedlichen Themen</p>
