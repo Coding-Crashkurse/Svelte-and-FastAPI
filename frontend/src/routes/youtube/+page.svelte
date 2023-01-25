@@ -1,6 +1,17 @@
-img
 <script>
     import Card from "../../components/Card.svelte";
+
+        const getData = async () => {
+        try {
+            let response = await fetch("http://localhost:4000/entries");
+            let data = await response.json();
+            return data;
+        } catch(err) {
+            console.log(err);
+        }
+    }
+
+
 </script>
 
 <div class="wrapper bg-blue-200 pb-20 p-4">
@@ -21,14 +32,19 @@ img
         </div>
 
         <div class="cardwrapper grid md:grid-cols-3 grid-cols-1 gap-6">
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
+        {#await getData()}
+            <p>...waiting</p>
+        {:then array}
+
+            {#each array as item (item.id)}
+                <Card/>
+            {/each}
+        {:catch error}
+            <p style="color: red">{error.message}</p>
+        {/await}
+
+
+
         </div>
 </div>
 

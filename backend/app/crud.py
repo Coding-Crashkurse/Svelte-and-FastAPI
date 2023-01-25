@@ -8,3 +8,8 @@ async def create_entry(content: YouTubeContent, db: Session):
     db.commit()
     db.refresh(new_content)
     return {"success": f"Eintrag mit ID {new_content.id} erstellt"}
+
+
+async def get_entries(db: Session):
+    entries = db.query(YouTube).all()
+    return entries
