@@ -11,8 +11,8 @@
       </div>
 
       <div class="cardwrapper grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Card/>
-          <Card/>
+          <!-- <Card/>
+          <Card/> -->
 
       </div>
 </div>

@@ -6,7 +6,6 @@ from app.db_and_models import YouTubeContent
 from app.session import Session, create_db_and_tables, get_session
 
 
-
 app = FastAPI()
 
 app.add_middleware(

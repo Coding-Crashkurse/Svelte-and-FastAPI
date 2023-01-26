@@ -1,4 +1,5 @@
 <script>
+
     import Card from "../../components/Card.svelte";
 
         const getData = async () => {
@@ -37,7 +38,7 @@
         {:then array}
 
             {#each array as item (item.id)}
-                <Card/>
+                <Card image_url={item.image_url} description={item.description} link={item.link}  title={item.title} />
             {/each}
         {:catch error}
             <p style="color: red">{error.message}</p>
