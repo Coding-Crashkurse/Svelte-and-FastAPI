@@ -4,7 +4,7 @@ from app.session import Session
 
 async def create_entry(content: YouTubeContent, db: Session):
     new_content = YouTube(
-        image_url=f"https://img.youtube.com/vi/{content.image_url}/hq720.jpg",
+        image_url=content.image_url,
         title=content.title,
         description=content.description,
         link=f"https://youtu.be/{content.image_url}",
