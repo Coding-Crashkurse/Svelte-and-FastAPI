@@ -1,18 +1,19 @@
-<script>
-
+<script lang="ts">
     import Card from "../../components/Card.svelte";
 
-        const getData = async () => {
+    let show_all = false;
+    let data: Array<{id: number, video_id: string, description: string, link: string, title: string}> = [];
+
+    $: dataToBeShown = show_all ? data : data.slice(0, 9)
+
+    const getData = async () => {
         try {
             let response = await fetch("http://localhost:4000/entries");
-            let data = await response.json();
-            return data;
+            data = await response.json();
         } catch(err) {
             console.log(err);
         }
     }
-
-
 </script>
 
 <div class="wrapper bg-blue-200 pb-20 p-4">
@@ -29,30 +30,25 @@
             <div class="flex justify-end p-4">
                 <h2 class="text-xl">... und mehr</h2>
             </div>
-
         </div>
 
-        <div class="cardwrapper grid md:grid-cols-3 grid-cols-1 gap-6">
-        {#await getData()}
-            <p>...waiting</p>
-        {:then array}
 
-            {#each array as item (item.id)}
-                <Card image_url={item.image_url} description={item.description} link={item.link}  title={item.title} />
+        <div class="cardwrapper grid md:grid-cols-3 grid-cols-1 gap-6">
+            {#await getData()}
+            <p>...waiting</p>
+        {:then _}
+            {#each dataToBeShown as item (item.id)}
+                <Card {...item} />
             {/each}
         {:catch error}
             <p style="color: red">{error.message}</p>
         {/await}
-
-
-
         </div>
+        <div class="flex mt-6">
+            <button class="btn mx-auto w-30" on:click={() => { show_all = !show_all }}>Alle anzeigen...</button>
+        </div>
+
 </div>
 
-
 </div>
-
-
-
-
 

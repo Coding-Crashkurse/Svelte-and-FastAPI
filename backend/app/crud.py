@@ -4,10 +4,10 @@ from app.session import Session
 
 async def create_entry(content: YouTubeContent, db: Session):
     new_content = YouTube(
-        image_url=content.image_url,
+        video_id=f"https://i.ytimg.com/vi/{content.video_id}/hq720.jpg",
         title=content.title,
         description=content.description,
-        link=f"https://youtu.be/{content.image_url}",
+        link=f"https://youtu.be/{content.video_id}",
     )
     db.add(new_content)
     db.commit()

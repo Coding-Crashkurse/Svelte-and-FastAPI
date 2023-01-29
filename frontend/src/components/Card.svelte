@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let image_url: string;
+  export let video_id: string;
   export let description: string;
   export let link: string;
   export let title: string;
@@ -8,7 +8,7 @@
 
 
 <div class="card w-full bg-base-100 shadow-xl">
-    <figure><img src={image_url} alt="Shoes" /></figure>
+    <figure><img src={video_id} alt="Shoes" /></figure>
     <div class="card-body">
       <h2 class="card-title">{title}</h2>
       <p>{description}</p>

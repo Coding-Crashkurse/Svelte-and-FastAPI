@@ -4,7 +4,7 @@ from sqlmodel import Field, SQLModel
 
 
 class YouTubeContent(SQLModel):
-    image_url: str
+    video_id: str
     title: str
     description: str
 
