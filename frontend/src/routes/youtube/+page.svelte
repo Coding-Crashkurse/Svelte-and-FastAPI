@@ -8,7 +8,7 @@
 
     const getData = async () => {
         try {
-            let response = await fetch("http://localhost:4000/entries");
+            let response = await fetch("http://localhost:4000/get_entries");
             data = await response.json();
         } catch(err) {
             console.log(err);
