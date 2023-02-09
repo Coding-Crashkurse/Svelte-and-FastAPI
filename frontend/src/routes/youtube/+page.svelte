@@ -5,6 +5,7 @@
     let data: Array<{id: number, video_id: string, description: string, link: string, title: string}> = [];
 
     $: dataToBeShown = show_all ? data : data.slice(0, 9)
+    $: ""
 
     const getData = async () => {
         try {
@@ -45,7 +46,7 @@
         {/await}
         </div>
         <div class="flex mt-6">
-            <button class="btn mx-auto w-30" on:click={() => { show_all = !show_all }}>Alle anzeigen...</button>
+            <button class="btn mx-auto w-30" on:click={() => { show_all = !show_all }}>{show_all ? "Verstecken..." : "Alle anzeigen..."}</button>
         </div>
 
 </div>
