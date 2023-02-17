@@ -1,17 +1,20 @@
 import scrapetube
 import requests
 
-playlists = ["PL-lCrD3QqynWOYATxwjTPSc_qr3iWus_a", "PL-lCrD3QqynX2a2sgXZlvxEGssGg9ZTCa", "PL-lCrD3QqynWL0Ve2zqtABq6cE4BwmVvm", "PL-lCrD3QqynWDYLO6GMzqnZL29y_qe-3v"]
+playlists = ["PL-lCrD3QqynV3jliSJ1VfUu-4Uf0f6krh", "PL-lCrD3QqynWDYLO6GMzqnZL29y_qe-3v", "PL-lCrD3QqynWOYATxwjTPSc_qr3iWus_a", "PL-lCrD3QqynX2a2sgXZlvxEGssGg9ZTCa", "PL-lCrD3QqynWL0Ve2zqtABq6cE4BwmVvm"]
 
-videos = scrapetube.get_playlist("PL-lCrD3QqynWOYATxwjTPSc_qr3iWus_a")
 fastapi_url = "http://127.0.0.1:4000/create_entry"
 playlist_url = "http://127.0.0.1:4000/create_playlist"
-
 
 for playlist in playlists:
     playlist_data = {"id": playlist}
     requests.post(playlist_url, json=playlist_data)
-    for video in scrapetube.get_playlist(playlist):
+
+    # Convert the generator object to a list and reverse the order of items
+    videos = list(scrapetube.get_playlist(playlist))
+    videos.reverse()
+
+    for video in videos:
         video_id = video['videoId']
         title = video["title"].get("runs")[0].get("text")
 
