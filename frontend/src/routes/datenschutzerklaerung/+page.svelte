@@ -167,9 +167,9 @@
 		der Verwendung von Cookies (wobei dadurch auch die Funktionalität unserer Online-Dienste
 		eingeschränkt sein kann). Ein Widerspruch gegen die Verwendung von Cookies zu
 		Online-Marketing-Zwecken kann auch über die Websites
-		<a href="https://optout.aboutads.info" target="_blank">https://optout.aboutads.info</a>
+		<a href="https://optout.aboutads.info" target="_blank" rel="noreferrer">https://optout.aboutads.info</a>
 		und
-		<a href="https://www.youronlinechoices.com/" target="_blank"
+		<a href="https://www.youronlinechoices.com/" target="_blank" rel="noreferrer"
 			>https://www.youronlinechoices.com/</a
 		> erklärt werden.
 	</p>
@@ -319,12 +319,12 @@
 			oder zielgerichtete Anzeigen zu schalten; <strong>Dienstanbieter:</strong> Google Ireland
 			Limited, Gordon House, Barrow Street, Dublin 4, Irland; <strong>Rechtsgrundlagen:</strong>
 			Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f) DSGVO); <strong>Website:</strong>
-			<a href="https://fonts.google.com/" target="_blank">https://fonts.google.com/</a>;
+			<a href="https://fonts.google.com/" target="_blank" rel="noreferrer">https://fonts.google.com/</a>;
 			<strong>Datenschutzerklärung:</strong>
-			<a href="https://policies.google.com/privacy" target="_blank"
+			<a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer"
 				>https://policies.google.com/privacy</a
 			>; <strong>Weitere Informationen:</strong>
-			<a href="https://developers.google.com/fonts/faq/privacy?hl=de" target="_blank"
+			<a href="https://developers.google.com/fonts/faq/privacy?hl=de" target="_blank" rel="noreferrer"
 				>https://developers.google.com/fonts/faq/privacy?hl=de</a
 			>.
 		</li>
