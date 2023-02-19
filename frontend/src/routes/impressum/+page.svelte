@@ -11,8 +11,8 @@
 
 	<h2 class="text-xl pt-4">Kontakt</h2>
 	<p>
-		Telefon: 017685623953<br />
-		E-Mail: langmarkus@hotmail.com
+		Telefon: +49 176 85623 953<br />
+		E-Mail: datamastery87@gmail.com
 	</p>
 
 	<h2 class="text-xl pt-4">Umsatzsteuer-ID</h2>

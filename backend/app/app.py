@@ -7,7 +7,7 @@ from app.session import Session, create_db_and_tables, get_session
 
 app = FastAPI()
 
-origins = ["*"]
+origins = ["https://coding-crashkurse.com"
 
 app.add_middleware(
     CORSMiddleware,

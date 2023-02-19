@@ -24,9 +24,6 @@ sudo apt-get install \
 
 apt-get install nginx -y
 
-snap install core
-snap refresh core
-snap install docker
 snap install --classic certbot
 
 sudo ln -s /snap/bin/certbot /usr/bin/certbot

@@ -6,12 +6,12 @@
 <div class="nav-wrapper bg-black p-2 text-white absolute w-full">
 	<div class="max-w-screen-xl flex  justify-between mx-auto flex-col md:flex-row">
 		<div class="flex items-center justify-center">
-			<a class="btn btn-ghost normal-case text-xl">Coding Crashkurse</a>
+			<div class="btn btn-ghost normal-case text-xl">Coding Crashkurse</div>
 		</div>
 		<div class="flex justify-center">
 			<a
 				href="/"
-				class="group text-white hover:text-sky-600 transition duration-300 p-2 m-2 text-xl"
+				class="group text-white hover:text-sky-600 transition duration-300 p-2 md:m-2 md:text-xl"
 			>
 				Home
 				<span
@@ -20,7 +20,7 @@
 			</a>
 			<a
 				href="/youtube"
-				class="group text-white hover:text-sky-600 transition duration-300 p-2 m-2 text-xl"
+				class="group text-white hover:text-sky-600 transition duration-300 p-2 md:m-2 md:text-xl "
 			>
 				YouTube
 				<span
@@ -29,7 +29,7 @@
 			</a>
 			<a
 				href="/premium"
-				class="group text-white hover:text-sky-600 transition duration-300 p-2 m-2 text-xl"
+				class="group text-white hover:text-sky-600 transition duration-300 p-2 md:m-2 md:text-xl"
 			>
 				Premium
 				<span
@@ -38,7 +38,7 @@
 			</a>
 			<a
 				href="/about"
-				class="group text-white hover:text-sky-600 transition duration-300 p-2 m-2 text-xl"
+				class="group text-white hover:text-sky-600 transition duration-300 p-2 md:m-2 md:text-xl"
 			>
 				About
 				<span

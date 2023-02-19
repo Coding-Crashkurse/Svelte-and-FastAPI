@@ -2,7 +2,7 @@
 	<div class="max-w-screen-xl mx-auto pt-40">
 		<div class="text-center">
 			<h3 class="text-blue-500 text-2xl p-2 uppercase font-extrabold">Coding Crashkurse</h3>
-			<h1 class="text-4xl  md:text-6xl text-white p-4 uppercase font-extrabold leading-normal">
+			<h1 class="text-2xl  md:text-6xl text-white p-4 uppercase font-extrabold leading-normal">
 				Programmierkurse für alle
 			</h1>
 			<p class="text-xl md:text-2xl text-white p-4">
@@ -27,8 +27,8 @@
 					<a href="/">YouTube abonnieren</a>
 				</div>
 
-				<div class="flex justify-center my-8">
-					<a href="/youtube" class="btn mr-2 px-8 bg-black border-1 border-white hover:bg-blue-700"
+				<div class="flex flex-col justify-center my-8 md:flex-row" >
+					<a href="/youtube" class="btn mr-2 mb-2 px-8 bg-black border-1 border-white hover:bg-blue-700"
 						>Direkt auf YouTube</a
 					>
 					<a

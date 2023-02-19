@@ -1,5 +1,5 @@
 <div class="wrapper pt-40 md:pt-20 px-4">
-	<h1 class="text-4xl">Datenschutzerklärung</h1>
+	<h1 class="text-2xl">Datenschutzerklärung</h1>
 	<p>Stand: 10. Februar 2023</p>
 	<h2>Inhaltsübersicht</h2>
 	<ul class="index text-blue-400 underline">
@@ -417,4 +417,9 @@
 	ul li {
 		padding-top: 4px;
 	}
+
+	a {
+		word-break: break-all;
+	}
+
 </style>
