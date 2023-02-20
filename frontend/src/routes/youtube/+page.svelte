@@ -1,7 +1,6 @@
 <script lang="ts">
 	import Card from '../../components/Card.svelte';
 
-
 	let show_all = false;
 	export let data: Array<{
 		id: number;
@@ -10,7 +9,7 @@
 		title: string;
 	}> = [];
 
-	$: arr = Object.values(data)
+	$: arr = Object.values(data);
 	$: dataToBeShown = show_all ? arr : arr.slice(0, 9);
 </script>
 
@@ -22,24 +21,21 @@
 
 		<div>
 			<div class="logos flex gap-6 md:gap-16 flex-column mt-16 justify-center">
-				<img src="images/html.png" alt="" class="object-cover w-16 md:w-24 h-16 md:h-24" />
-				<img src="images/css.png" alt="" class="object-cover w-16 md:w-24 h-16 md:h-24" />
-				<img src="images/javascript.png" alt="" class="object-cover w-16 md:w-24 h-16 md:h-24" />
-				<img src="images/python.png" alt="" class="object-cover w-16 md:w-24 h-16 md:h-24" />
-				<img src="images/typescript.png" alt="" class="object-cover w-16 md:w-24 h-16 md:h-24" />
+				<img src="images/html.png" alt="" class="object-cover w-12 md:w-24 h-12 md:h-24" />
+				<img src="images/css.png" alt="" class="object-cover w-12 md:w-24 h-12 md:h-24" />
+				<img src="images/javascript.png" alt="" class="object-cover w-12 md:w-24 h-12 md:h-24" />
+				<img src="images/python.png" alt="" class="object-cover w-12 md:w-24 h-12 md:h-24" />
+				<img src="images/typescript.png" alt="" class="object-cover w-12 md:w-24 h-12 md:h-24" />
 			</div>
 			<div class="flex justify-end p-4">
 				<h2 class="text-xl">... und mehr</h2>
 			</div>
 		</div>
 
-
 		<div class="cardwrapper grid md:grid-cols-3 grid-cols-1 gap-6">
-
-
-				{#each dataToBeShown as item (item.video_id)}
-					<Card {...item} />
-				{/each}
+			{#each dataToBeShown as item (item.video_id)}
+				<Card {...item} />
+			{/each}
 		</div>
 		<div class="flex mt-6">
 			<button
