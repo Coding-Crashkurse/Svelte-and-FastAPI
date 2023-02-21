@@ -8,6 +8,7 @@
 		<div class="flex items-center justify-center">
 			<div class="btn btn-ghost normal-case text-xl">Coding Crashkurse</div>
 		</div>
+
 		<div class="flex justify-center">
 			<a
 				href="/"
@@ -19,10 +20,10 @@
 				/>
 			</a>
 			<a
-				href="/youtube"
+				href="/kurse"
 				class="group text-white hover:text-sky-600 transition duration-300 p-2 md:m-2 md:text-xl "
 			>
-				YouTube
+				Kurse
 				<span
 					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
 				/>
@@ -45,6 +46,15 @@
 					class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
 				/>
 			</a>
+			<a
+			href="/kontakt"
+			class="group text-white hover:text-sky-600 transition duration-300 p-2 md:m-2 md:text-xl"
+		>
+			Kontakt
+			<span
+				class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-sky-600"
+			/>
+		</a>
 		</div>
 	</div>
 </div>

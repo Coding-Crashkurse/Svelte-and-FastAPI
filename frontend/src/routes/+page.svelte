@@ -21,18 +21,15 @@
 						200+ kostenlose Tutorials und Crashkurse zu vielen unterschiedlichen Themen
 					</p>
 				</div>
-				<div class="yt-wrapper text-center my-6">
-					<a href="/">YouTube abonnieren</a>
-				</div>
 
 				<div class="flex flex-col justify-center my-8 md:flex-row">
 					<a
-						href="/youtube"
+						href="https://www.youtube.com/channel/UCikLKUS0DZWMkukbkYDG49Q" target="_blank" rel="noreferrer"
 						class="btn mr-2 mb-2 px-8 bg-black border-1 border-white hover:bg-blue-700"
 						>Direkt auf YouTube</a
 					>
 					<a
-						href="/youtube"
+						href="/kurse"
 						class="btn mr-2 bg-blue-700 px-8 border-1 border-white hover:bg-blue-700"
 						>Meine Videos</a
 					>

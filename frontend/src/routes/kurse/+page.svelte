@@ -18,6 +18,11 @@
 		<h1 class="text-black text-center text-3xl md:text-4xl font-extrabold mb-4">
 			Meine Crashkurse auf YouTube
 		</h1>
+		<div class="py-4 text-xl text-center px-8">
+			<p>Frontend? Backend? Projekte? Oder eher theoretisch? Kein Problem!</p>
+			<p>Hier findest du eine umfangreiche Auswahl an Videos zu verschiedenen Themen.</p>
+		</div>
+
 
 		<div>
 			<div class="logos flex gap-6 md:gap-16 flex-column mt-16 justify-center">

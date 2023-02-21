@@ -31,6 +31,9 @@
 <div class="wrapper bg-blue-200 pb-20 p-4 text-center">
 	<div class="max-w-screen-xl mx-auto pt-40 bg">
 		<h1 class="text-black text-4xl font-extrabold">Meine Premium Kurse</h1>
+		<div class="py-4 text-xl text-center px-8">
+			<p>Hier findest du eine Übersicht über meine Premium Kurse. Diese Kurse befassen sich im Gegensatz zu meinen eher kürzeren Videos auf YouTube in-depth mit den unten aufgeführten Themen. Weitere Kurse sind bereits in Arbeit!</p>
+		</div>
 		<h2 class="text-black text-2xl py-6 font-bold">Udemy</h2>
 		<div class="cardwrapper grid grid-cols-1 md:grid-cols-2 gap-6">
 			{#each courses as course}
