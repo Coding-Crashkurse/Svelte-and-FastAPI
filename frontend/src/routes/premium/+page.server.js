@@ -1,7 +1,7 @@
 /** @type {import('./$types').PageServerLoad} */
 export async function load({ fetch }) {
-	const username = 'user'; // Replace with your actual username
-	const password = 'password'; // Replace with your actual password
+	const username = import.meta.env.VITE_AUTH_USERNAME; // Access environment variable
+	const password = import.meta.env.VITE_AUTH_PASSWORD; // Access environment variable
 	const credentials = Buffer.from(`${username}:${password}`).toString('base64');
 
 	let response;

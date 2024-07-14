@@ -1,5 +1,7 @@
-from fastapi import Depends, FastAPI
+from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import HTTPBasic, HTTPBasicCredentials
+import os
 
 from app.crud import (
     create_youtube_entry,
@@ -17,14 +19,11 @@ from app.session import Session, create_db_and_tables, get_session
 
 app = FastAPI()
 
-from fastapi import Depends, HTTPException, status
-from fastapi.security import HTTPBasic, HTTPBasicCredentials
+# Single user credentials from environment variables
+USERNAME = os.getenv("AUTH_USERNAME", "user")
+PASSWORD = os.getenv("AUTH_PASSWORD", "password")
 
 security = HTTPBasic()
-
-# Single user credentials
-USERNAME = "user"
-PASSWORD = "password"
 
 
 def authenticate(credentials: HTTPBasicCredentials = Depends(security)):

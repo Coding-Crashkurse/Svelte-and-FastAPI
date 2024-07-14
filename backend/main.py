@@ -5,4 +5,4 @@ load_dotenv(find_dotenv())
 
 from app.app import app
 
-uvicorn.run(app, port=4000, host="127.0.0.1")
+uvicorn.run(app, port=5000, host="127.0.0.1")

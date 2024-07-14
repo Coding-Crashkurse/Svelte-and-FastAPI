@@ -11,6 +11,8 @@ services:
       - "5000:5000"
     environment:
       DATABASE_URL: "postgresql://postgres:postgres@db:5432/mydb"
+      AUTH_USERNAME: "user"
+      AUTH_PASSWORD: "password"
     restart: always
     depends_on:
       - db
@@ -31,6 +33,10 @@ services:
       - api
       - startup
       - db
+    environment:
+      AUTH_USERNAME: "user"
+      AUTH_PASSWORD: "password"
+      API_BASE_URL: "http://api:5000"
   nginx:
     image: nginx:latest
     ports:
